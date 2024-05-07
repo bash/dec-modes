@@ -122,9 +122,12 @@ tr:nth-child(2n) td {
     background-color: var(--highlight-bg);
 }
 
-ul, ol {
-    list-style-position: inside;
-    padding: 0;
+ol {
+    padding-inline-start: 3ch;
+}
+
+ul {
+    padding-inline-start: 1.5ch;
 }
 
 footer {
