@@ -18,8 +18,9 @@ jobs:
 
     - run: sudo apt-get install -y pandoc
 
-    - name: Build Site
-      run: make
+    - run: make
+
+    - run: make install
 
     - name: Upload GitHub Pages Artifact
       uses: actions/upload-pages-artifact@v1

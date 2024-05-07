@@ -1,4 +1,4 @@
-.PHONY: all watch
+.PHONY: all watch install
 
 all: index.html styles.css
 
@@ -13,3 +13,7 @@ styles.css: styles.scss
 
 watch:
 	MAKE=$(MAKE) ./make-scripts/watch.bash
+
+install:
+	mkdir _site
+	cp index.html fleuron.svg _site/
