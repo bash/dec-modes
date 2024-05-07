@@ -114,7 +114,6 @@ These modes can be set using `DECSET` and unset using `DECRST`.
 | 1007   | xterm        | Enable Alternate Scroll Mode                                  |
 | 1010   | rxvt         | Scroll to bottom on tty output                                |
 | 1011   | rxvt         | Scroll to bottom on key press                                 |
-| 1012   | ?            |                                                               |
 | 1014   | xterm        | Enable fastScroll resource                                    |
 | 1015   | urxvt        | Enable urxvt Mouse Mode                                       |
 | 1016   | xterm        | Enable SGR Mouse PixelMode                                    |
