@@ -1,0 +1,44 @@
+name: Build Website
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: latest
+
+    - run: sudo apt-get install -y pandoc
+
+    - name: Build Site
+      run: make
+
+    - name: Upload GitHub Pages Artifact
+      uses: actions/upload-pages-artifact@v1
+
+  deploy_pages:
+    needs: build
+    if: github.ref_name == 'main'
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
+
