@@ -222,7 +222,7 @@ This table draws from many different sources:
 1. [Contour: Synchronized Output](https://contour-terminal.org/vt-extensions/synchronized-output/)
 1. [Terminal Unicode Core](https://github.com/contour-terminal/terminal-unicode-core)
 1. [Contour: Line Reflow Reconfiguration](https://contour-terminal.org/vt-extensions/line-reflow-mode/)
-1. [Contour: Color Palette Updates](https://contour-terminal.org/vt-extensions/synchronized-output/)
+1. [Contour: Dark and Light Mode Detection](https://contour-terminal.org/vt-extensions/color-palette-update-notifications/)
 1. [BiDi in Terminal Emulators](https://terminal-wg.pages.freedesktop.org/bidi/)
 1. [mintty: CtrlSeqs](https://github.com/mintty/mintty/wiki/CtrlSeqs)
 1. [DRCSTerm](https://github.com/saitoha/drcsterm)
