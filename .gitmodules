@@ -1,3 +1,0 @@
-[submodule "satellite"]
-	path = satellite
-	url = https://github.com/bash/satellite

@@ -7,4 +7,7 @@ on:
 
 jobs:
   build:
-    uses: ./satellite/.github/workflows/build.yml
+    uses: bash/satellite/.github/workflows/build-reusable.yml@eab5fc2483393b8436e6cae707a712c497b25a49
+    permissions:
+      pages: write
+      id-token: write
