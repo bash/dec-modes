@@ -6,7 +6,8 @@ index.html: readme.md template.html styles.css
 	pandoc -i readme.md -o $@ -f gfm --template template.html --standalone \
 		--metadata title="DEC Modes" \
 		--metadata lang="en" \
-		--metadata style="$$(cat styles.css)"
+		--metadata style="$$(cat styles.css)" \
+		--metadata source_code="https://github.com/bash/dec-modes"
 
 styles.css: styles.scss
 	npx sass@1.72.0 $< $@ --no-source-map
