@@ -6,9 +6,9 @@ on:
 
 jobs:
   build:
-    uses: bash/satellite/.github/workflows/build-reusable.yml@main
+    uses: bash/satellite/.github/workflows/build-reusable.yml@v1
     with:
-      workflow-ref: main
+      workflow-ref: v1
     permissions:
       pages: write
       id-token: write
